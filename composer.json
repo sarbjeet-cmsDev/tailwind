@@ -1,0 +1,35 @@
+{
+    "name": "mgenius/tailwind-compiler",
+    "description": "Process content and output tailwind compiled css",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mgenius\\TailwindCompiler\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "symfony/process": ">=5.4",
+        "symfony/http-client": "=5.4"
+    },
+    "require-dev": {
+        "php": ">=7.2",
+        "symfony/process": ">=5.4",
+        "symfony/http-client": "=5.4"
+    },
+    "authors": [
+        {
+            "name": "Sarbjeet Singh",
+            "email": "rajalwaysfirst@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "scripts": {
+        "post-install-cmd": [
+            "Mgenius\\TailwindCompiler\\Builder::postInstall"
+        ],
+        "post-update-cmd": [
+            "Mgenius\\TailwindCompiler\\Builder::postUpdate"
+        ]
+    }
+}
