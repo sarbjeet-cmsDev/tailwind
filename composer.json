@@ -2,6 +2,7 @@
     "name": "mgenius/tailwind-compiler",
     "description": "Process content and output tailwind compiled css",
     "type": "library",
+    "version": "0.0.1",
     "autoload": {
         "psr-4": {
             "Mgenius\\TailwindCompiler\\": "src/"
