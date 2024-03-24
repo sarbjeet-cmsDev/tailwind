@@ -28,7 +28,7 @@
             "email": "rajalwaysfirst@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "scripts": {
         "post-install-cmd": [
             "Mgenius\\TailwindCompiler\\Builder::postInstall"
